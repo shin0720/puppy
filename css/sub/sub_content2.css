@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+#sub2_banner {
+}
+#content {
+}
+/* .banner{
+    width: 100%;
+    height: 300px;
+} */
+
+.sub2_banner {
+  margin-top: 156px;
+}
+
+.content {
+  width: 100%;
+  height: inherit;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+.content .sub_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* background-color: rgb(203, 168, 168); */
+  margin: 50px 0;
+}
+
+.content .sub_title p {
+  display: flex;
+  align-items: flex-end;
+  font-size: 30px;
+  font-family: var(--main_font);
+}
+.content .sub_title p::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../image/sub2/icon_title.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.content .button {
+  width: 100%;
+}
+.content .button ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  /* gap: 20px; */
+}
+.content .button ul li {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.content .button ul li:last-child {
+  margin-right: 0;
+}
+
+.content .button ul li p {
+  font-size: 21px;
+  font-family: var(--sub_font);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .button ul li p::before {
+  content: "";
+  /* position: absolute; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: block;
+  width: 35px;
+  height: 35px;
+  /* margin-right: 10px; */
+  flex-shrink: 0;
+}
+
+/* 각 탭별 아이콘 */
+.content .button ul li:nth-child(1) p::before {
+  background-image: url(../../image/sub2/sub2_icon1.png);
+}
+.content .button ul li:nth-child(2) p::before {
+  background-image: url(../../image/sub2/sub2_icon2.png);
+}
+.content .button ul li:nth-child(3) p::before {
+  background-image: url(../../image/sub2/sub2_icon3.png);
+}
+.content .button ul li:nth-child(4) p::before {
+  background-image: url(../../image/sub2/sub2_icon4.png);
+}
+.content .button ul li:nth-child(5) p::before {
+  background-image: url(../../image/sub2/sub2_icon5.png);
+}
+
+/* 탭메뉴 배경 */
+.content .button ul li::after {
+  content: "";
+  background-image: url(../../image/sub2/sub1_menu.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 70px;
+  z-index: -1;
+}
+.content .button ul li.active::after {
+  background-image: url(../../image/sub2/sub1_menu2.png);
+}
+
+/* box */
+.content .box {
+  width: 100%;
+  margin-top: 100px;
+}
+.content .box article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.content .box .inner_box {
+  width: 48%;
+  height: auto;
+  padding: 10px;
+  display: none;
+  border: 3px solid var(--black);
+  border-radius: 20px;
+  flex: 0 0 calc(50% - 10px);
+  background-color: rgb(255, 254, 254);
+  transition: all 0.5s;
+}
+.content .box .inner_box:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 3px 5px var(--black200);
+}
+
+.content .box .inner_box .hospital {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  padding: 10px;
+}
+.content .box .inner_box .inner_img {
+  width: 45%;
+}
+.content .box .inner_box .inner_notice {
+  text-align: left;
+  width: 55%;
+  margin-left: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+.content .box .inner_box .inner_notice::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: var(--black);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+.content .box .inner_box .inner_notice strong {
+  font-family: var(--sub_font);
+  font-size: 20px;
+  display: inline;
+}
+.content .box .inner_box .inner_notice strong span {
+  font-weight: 400;
+  font-size: 19px;
+}
+.content .box .inner_box .inner_notice strong em {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+}
+.content .box .inner_box .inner_notice p {
+  margin-top: 30px;
+  text-align: center;
+  color: #676565;
+  font-size: 19px;
+}
+
+/* 더보기 버튼 스타일 */
+.more_wrap {
+  text-align: center;
+  margin: 60px 0 120px;
+}
+#moreBtn {
+  padding: 10px 30px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  background: var(--sub1_color);
+  font-family: var(--main_font);
+  cursor: pointer;
+  transition: 0.6s;
+}
+#moreBtn:hover {
+  background: var(--main_color);
+}

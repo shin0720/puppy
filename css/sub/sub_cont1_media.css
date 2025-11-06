@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+
+
+
+
+@media (max-width: 1240px) {
+#profile_player .post {
+    width: 25vw;
+}
+#profile_player .frame{
+  height: 42vw;
+}
+#profile_player .viewport .nav.prev {
+    left: 27vw;
+}
+#profile_player .viewport .nav.next {
+    right: 26.5vw;
+}
+#profile_player .icon{
+  width: 3.5vw;
+  height: 3.5vw;}
+
+
+
+}
+
+
+
+@media (max-width: 1120px) {
+    #dog_lottie{
+        width: 25vw !important;
+        height: 25vw !important;
+    }
+    #banner {
+    height: 25vw;}
+    #banner::after{
+        height: 0.7vw;
+        bottom: 1.5vw;
+    }
+  #profile_player .viewport .nav {
+    top: 15.5vw;
+width: 70px;
+    height: 39px;}
+
+  #profile_player .viewport .nav.prev {
+    left: 27.5vw;
+}
+#profile_player .viewport .nav.next {
+    right: 27vw;
+}
+.profile_box > article:last-of-type {
+    padding: 0 30px;
+}
+
+
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+    /* profile_player */
+    .player .title {
+    font-size: 35px;}
+        #profile_player .frame {
+        height: 42vw;
+    }
+#profile_player .viewport .nav.prev {
+    left:26.5vw;
+}
+#profile_player .viewport .nav.next {
+    right: 26vw;
+}
+/* profile_box */
+.profile_box .title {
+    font-size: 35px;}
+    .profile_box .box{
+  flex:0 0 30% ;}
+  .profile_box > article {
+    gap:2vw;}
+
+}
+
+
+
+
+@media (max-width: 920px) {
+    #profile_player {
+    height: 700px;}
+    #banner {
+    margin-top: 250px;
+}
+#profile_player .viewport .nav.prev {
+    left: 26vw;
+    transform: scale(0.7);
+}
+#profile_player .viewport .nav.next {
+    right: 25.5vw;
+    transform: scale(0.7);
+}
+#profile_player .viewport .nav:hover{
+  transform: scale(0.8);
+}
+#profile_player .viewport .nav:active {
+    transform: scale(0.8);
+}
+    #profile_player .icon {
+        width: 3.8vw;
+        height: 3.8vw;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+/* 헤더 */
+  .header {
+    height: 100px;
+  }
+
+  .header_logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    /* 가운데 정렬 */
+    /* transform: none; */
+  }
+
+  .header_mbnav {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header_nav {
+    position: relative;
+  }
+
+  .header_nav ul {
+    position: absolute;
+    top: 0px;
+    right: -300px;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+  }
+
+
+
+    #banner {
+    margin-top: 200px;}
+
+
+/* profile_box */
+#profile_player .viewport {
+    height: 430px;}
+    #profile_player {
+    height: 600px;}
+    .player .title {
+        font-size: 28px;
+    }
+        #profile_player .viewport .nav {
+        top: 46.5vw;
+    }
+    #profile_player .viewport .nav.prev {
+    left: 34vw;
+    transform: scale(0.9);
+}
+#profile_player .viewport .nav.next {
+    right: 34.5vw;
+    transform: scale(0.9);
+}
+    #profile_player .icon {
+        width: 3.9vw;
+        height: 3.9vw;
+    margin-bottom: 4px;}
+#profile_player .caption h3 {
+    font-size: 3vw;}
+    #profile_player .caption .meta {
+    font-size: 2.5vw;
+}
+#profile_player .caption .desc {
+    font-size: 2vw;
+    display: inline-block;
+}
+#profile_player .caption {
+    padding: 10px;
+}
+.icon.like .count {
+    font-size: 1.8vw;
+}
+
+#profile_player .icon p {
+    display: none;
+}
+
+        .profile_box > article:last-of-type {
+        padding: 0px 0px;
+    }
+
+    /* profile_box */
+.profile_box .title {
+    font-size: 28px;
+}
+.profile_box .profile .text{
+    font-size: 14px;
+}
+.profile_box .box .profile .text strong span{
+    font-size: 14px;
+}
+.profile em.buttun{
+    font-size: 14px;
+}
+}
+
+
+
+
+
+
+@media (max-width: 760px) {
+.profile_box > article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+    #profile_player .viewport .nav.prev {
+    left: 34vw;
+    transform: scale(0.8);
+}
+#profile_player .viewport .nav.next {
+    right: 34.5vw;
+    transform: scale(0.8);
+}
+}
+
+@media (max-width: 680px) {
+#profile_player .caption h3 {
+    font-size: 3vw;}
+    #profile_player .caption .meta {
+    display: none;
+}
+#profile_player .caption .desc {
+    display: none;
+}
+
+
+}
+
+
+@media (max-width: 640px) {
+        .container {
+        padding: 0px;
+    }
+
+        #banner {
+        margin-top: 150px;
+    }
+
+        #profile_player {
+        height: 500px;
+    }
+    .player .title {
+        font-size: 23px;
+        margin: 50px 0;
+
+  }
+    #profile_player .viewport .nav.prev {
+    left: 27vw;
+}
+#profile_player .viewport .nav.next {
+    right: 27.5vw;
+}
+
+    /* profile_box */
+.profile_box .title {
+    font-size: 23px;
+height: 0;}
+   .profile_box .box {
+        flex: 0 0 48%;
+    }
+
+  .profile_box > article {
+    gap:3vw;}
+
+
+    .profile_box .box .profile .text strong span {
+    font-size: 14px;
+}
+    .profile em.buttun {
+        /* height: 30px; */
+        font-size: 14px;
+        /* line-height: 20px; */
+
+    }
+}
+
+
+
+
+
+@media (max-width: 580px) {
+
+
+}
+
+
+@media (max-width: 540px) {
+    #profile_player .icon {
+        width: 4.2vw;
+        height: 4.2vw;
+    }
+        #profile_player .viewport .nav {
+        top: 52.5vw;
+        }
+}
+
+
+@media (max-width: 500px) {
+.profile_box .box {
+    padding: 10px;}
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+         #profile_player {
+        height: 400px;
+    }
+            #profile_player .frame {
+        height: 44vw;
+    }
+
+            #profile_player .viewport .nav.prev {
+    left: 22vw;
+}
+#profile_player .viewport .nav.next {
+    right: 22.5vw;
+}
+
+
+
+        .profile_box .box .profile .text strong span {
+        font-size: 13px;
+    }
+
+    .profile_box .box {
+        flex: 0 0 58%;
+    }
+
+
+
+}
+
+
+
+
+@media (max-width: 420px) {
+        .profile em.buttun {
+    right: 8vw;}
+
+
+}
+
+
+
+
+
+@media (max-width: 400px) {
+         #profile_player .viewport .nav.prev {
+    left: 18vw;
+    transform: scale(.7);
+}
+#profile_player .viewport .nav.next {
+    right: 18.5vw;
+    transform: scale(.7)
+}    .profile em.buttun {
+        bottom: 5PX;
+        right: 6vw;
+
+}
+}
+
+
+@media (max-width: 360px) {
+
+    .player .title {
+        font-size: 18px;
+    }
+    /* profile_box */
+.profile_box .title {
+    font-size: 18px;}
+      
+}
